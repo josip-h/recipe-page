@@ -9,36 +9,38 @@
 </head>
 <body>
     <header>
-        <h1 class="header__title">Recipe Page Solution</h1>
+        <h1 class="header__title heading-large">Recipe Page Solution</h1>
     </header>
     <main>
         <div class="recipe-card">
             <div class="recipe-card__image">
                 <img src="./assets/images/image-omelette.jpeg" alt="Omelette">
             </div>
-            <div class="recipe-card__information">
-                <h2 class="recipe-card__title">Simple Omelette Recipe</h2>
-                <p class="recipe-card__description">An easy and quick dish, perfect for any meal. This classic omelette cmbines beaten eggs cookedto perfeciton, optionally filled with your choice of cheese, vegetables, or meats.</p>
-                <div class="recipe-card__preparation-time">
-                    <h3 class="preparation-time__title">Preparation time</h3>
-                    <ul class="preparation-time__list">
+            <div class="recipe-card__body">
+                <section class="recipe-card__information">
+                    <h2 class="recipe-card__title heading-large">Simple Omelette Recipe</h2>
+                    <p class="recipe-card__description body-regular">An easy and quick dish, perfect for any meal. This classic omelette cmbines beaten eggs cookedto perfeciton, optionally filled with your choice of cheese, vegetables, or meats.</p>
+                </section>
+                <section class="recipe-card__preparation-time">
+                    <h3 class="preparation-time__title heading-small">Preparation time</h3>
+                    <ul class="preparation-time__list body-regular">
                         <li><span>Total: </span>Approximately 10 minutes</li>
                         <li><span>Preparation: </span>5 minutes</li>
                         <li><span>Cooking: </span>5 minutes</li>
                     </ul>
-                </div>
-                <div class="recipe-card__ingredients">
+                </section>
+                <section class="recipe-card__ingredients">
                     <h3 class="ingredients__title">Ingredients</h3>
                     <ul class="ingredients__list">
                         <li>2-3 large eggs</li>
                         <li>Salt, to taste</li>
                         <li>Pepper, to taste</li>
                         <li>1 tablespoone of butter or oil</li>
-                        <li>Optional fillings: cheese, dived vegetables, cooked meats, herbs</li>
+                        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
                     </ul>
-                </div>
+                </section>
                 <hr>
-                <div class="recipe-card__instructions">
+                <section class="recipe-card__instructions">
                     <h3 class="instructions__title">Instructions</h3>
                     <ol class="instructions__list">
                         <li><span>Beat the eggs: </span>In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
@@ -48,9 +50,9 @@
                         <li><span>Fold and serve: </span>As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
                         <li><span>Enjoy: </span>Serve hot, with additional salt and pepper if needed.</li>
                     </ol>
-                </div>
+                </section>
                 <hr>
-                <div class="recipe-card__nutrition">
+                <section class="recipe-card__nutrition">
                     <h3 class="nutrition__title">Nutrition</h3>
                     <p class="nutrition__description">The table below shows nutritional values per servin without the additional fillings.</p>
                     <table>
@@ -71,7 +73,7 @@
                             <td>22g</td>
                         </tr>
                     </table>
-                </div>
+                </section>
             </div>
         </div>
     </main>

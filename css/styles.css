@@ -1,0 +1,141 @@
+/* ----- Fonts ----- */
+
+/* Outfit */
+@font-face {
+    font-family: "Outfit";
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+/* Young Serif */
+@font-face {
+    font-family: "Young Serif";
+    src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+    font-weight: 400;
+}
+
+/* ----- CSS Reset ----- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- Global variables ----- */
+
+:root {
+    /* Colors */
+    --color-dark-charcoal: #312E2C;
+    --color-dark-raspberry: #7A284E;
+    --color-brandy-red: #854632;
+    --color-wenge-brown: #5F564D;
+    --color-eggshell: #F3E5D7;
+    --color-white-coffee: #E3DDD7;
+    --color-snow: #FFF7FB;
+    --color-white: #FFFFFF;
+
+    /* Fonts */
+}
+
+/* ----- Element styles ----- */
+
+body {
+    background: var(--color-eggshell);
+}
+
+img {
+    width: 100%;
+}
+
+/* ----- Utilities ----- */
+
+.heading-large {
+    font-family: "Young Serif";
+    font-size: 36px;
+    color: var(--color-dark-charcoal);
+}
+
+.heading-medium {
+    font-family: "Young Serif";
+    font-size: 28px;
+    color: var(--color-brandy-red);
+}
+
+.heading-small {
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-dark-raspberry);
+}
+
+.body-regular {
+    font-family: "Outfit";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--color-wenge-brown);
+}
+
+.body-bold {
+    font-family: "Outfit";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--color-brandy-red);
+}
+
+/* ----- Components styles ----- */
+
+/* Header */
+.header__title {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Main */
+.recipe-card {
+    background-color: var(--color-white);
+}
+
+.recipe-card__image {
+    max-width: 375px;
+}
+
+.recipe-card__body {
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.recipe-card__description {
+    margin-top: 24px;
+}
+
+.recipe-card__preparation-time {
+    background-color: var(--color-snow);
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.preparation-time__list {
+    margin-top: 16px;
+
+    li {
+        margin-left: 32px;
+        margin-top: 8px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    li::marker {
+        color: var(--color-dark-raspberry);
+    }
+}
+
+/* Footer */
+
+
+/* ----- Media queries ----- */
