@@ -10,7 +10,6 @@
 @font-face {
     font-family: "Young Serif";
     src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
-    font-weight: 400;
 }
 
 /* ----- CSS Reset ----- */
@@ -61,12 +60,14 @@ hr {
     font-family: "Young Serif";
     font-size: 36px;
     color: var(--color-dark-charcoal);
+    font-weight: 400;
 }
 
 .heading-medium {
     font-family: "Young Serif";
     font-size: 28px;
     color: var(--color-brandy-red);
+    font-weight: 400;
 }
 
 .heading-small {
@@ -108,10 +109,11 @@ hr {
 
 .recipe-card__image {
     width: 100%;
+    max-height: 300px;
 }
 
 .recipe-card__body {
-    padding: 40px 32px;
+    padding: 40px 32px 0 32px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -165,10 +167,15 @@ hr {
     li {
         margin-top: 8px;
         padding-left: 18px;
+
+        span {
+            font-weight: 700;
+        }
     }
 
     li::marker {
         color: var(--color-dark-raspberry);
+        font-weight: 700;
     }
 }
 
@@ -195,8 +202,6 @@ hr {
 
     tr {
         display: block;
-        /* padding: 12px 0;
-        border-bottom: 1px solid var(--color-white-coffee); */
     }
 
     td {
@@ -237,6 +242,16 @@ hr {
     .recipe-card__image {
         img {
             border-radius: 12px;
+        }
+    }
+
+    .recipe-card__body {
+        padding: 40px 0 0 0;
+    }
+
+    .nutrition__table {
+        td {
+            width: 288px;
         }
     }
 }
