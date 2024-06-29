@@ -39,7 +39,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### What I learned
 
-1. How to change the color of list markers (bullets, numbers, ...) by using the ```li::marker``` pseudoselector. For example if we have some list like this one:
+1. How to change the color of list markers (bullets, numbers, ...) by using the ```li::marker``` selector. For example if we have some list like this one:
 
     ```html
     <ul>
@@ -56,7 +56,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
         color: "new-color";
     }
     ```
-2. How to target all children of a parent except last child by using the :not selector in combination with :last-child pseudoselector. Again on the example of a list from the example above we would write:
+2. How to target all children of a parent except last child by using the :not selector in combination with :last-child selector. Again on the example of a list from the example above we would write:
 
     ```css
     .parent-selector > :not(:last-child) {
@@ -67,8 +67,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Useful resources
 
 - [How to change bullet color of lists](https://www.w3schools.com/howto/howto_css_bullet_color.asp)
-- [How to use :last-child pseudoselector](https://www.w3schools.com/cssref/sel_last-child.php#gsc.tab=0)
-- [How to use :not pseudoselector](https://www.w3schools.com/cssref/sel_not.php)
+- [How to use :last-child selector](https://www.w3schools.com/cssref/sel_last-child.php#gsc.tab=0)
+- [How to use :not selector](https://www.w3schools.com/cssref/sel_not.php)
 
 ## Author
 
