@@ -41,10 +41,18 @@
 
 body {
     background: var(--color-eggshell);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 img {
     width: 100%;
+}
+
+hr {
+    height: 1px;
+    color: var(--color-white-coffee);
 }
 
 /* ----- Utilities ----- */
@@ -95,10 +103,11 @@ img {
 /* Main */
 .recipe-card {
     background-color: var(--color-white);
+    margin: 0 auto;
 }
 
 .recipe-card__image {
-    max-width: 375px;
+    width: 100%;
 }
 
 .recipe-card__body {
@@ -135,7 +144,99 @@ img {
     }
 }
 
+.ingredients__list {
+    margin-top: 24px;
+    padding: 0 25px;
+    
+    li {
+        margin-top: 8px;
+        padding-left: 18px;
+    }
+
+    li::marker {
+        color: var(--color-dark-raspberry);
+    }
+}
+
+.instructions__list {
+    margin-top: 24px;
+    padding: 0 25px;
+    
+    li {
+        margin-top: 8px;
+        padding-left: 18px;
+    }
+
+    li::marker {
+        color: var(--color-dark-raspberry);
+    }
+}
+
+.nutrition__description {
+    margin-top: 24px;
+}
+
+.nutrition__table {
+    display: block;
+    margin-top: 12px;
+
+    tbody {
+        display: block;
+    }
+
+    tbody > :not(:last-child) {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--color-white-coffee);
+    }
+
+    tbody > :last-child {
+        padding-top: 12px;
+    }
+
+    tr {
+        display: block;
+        /* padding: 12px 0;
+        border-bottom: 1px solid var(--color-white-coffee); */
+    }
+
+    td {
+        display: inline-block;
+        height: 24px;
+        width: 115.5px;
+    }
+
+    .tag {
+        padding-left: 32px;
+    }
+
+    .value {
+        margin-left: 16px;
+    }
+}
+
 /* Footer */
+.acknowledgments {
+    text-align: center;
+    padding: 30px;
+
+    a {
+        color: var(--color-brandy-red);
+    }
+}
 
 
 /* ----- Media queries ----- */
+
+@media (min-width: 737px) {
+    .recipe-card {
+        padding: 40px;
+        width: 736px;
+        border-radius: 24px;
+    }
+
+    .recipe-card__image {
+        img {
+            border-radius: 12px;
+        }
+    }
+}
