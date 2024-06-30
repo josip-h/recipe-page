@@ -50,8 +50,7 @@ img {
 }
 
 hr {
-    height: 1px;
-    color: var(--color-white-coffee);
+    border-color: var(--color-white-coffee);
 }
 
 /* ----- Utilities ----- */
